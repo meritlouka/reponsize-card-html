@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+body{
+  font-family: Manrope;
+  font-size: 13px;
+}
+
+html {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    justify-content: center;
+    display: flex; 
+    flex-wrap: wrap;
+    width: 700px;
+    height: 200px;
+    margin: auto;
+}
+.article{
+    border-radius: 0 5% 5% 0;
+    padding: 5%;
+    flex-basis: 46%; 
+    background-color: white;  
+}
+.title{
+    font-weight: 700;
+}
+.card-text{
+    font-weight: 500;
+}
+.img-cont{
+   flex-basis: 34%;   
+}
+.article-img{
+    overflow: hidden;
+    border-radius: 5% 0 0 5%;
+    height: 100%;
+    width: 124%;
+}
+.footer{
+    align-items: center;
+    display: flex; 
+    flex-wrap: wrap;
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+.zero-mrg{
+    margin: 0px;
+}
+.dark-gray{
+    color: hsl(217, 19%, 35%);
+}
+.medium-gray{
+   color: hsl(214, 17%, 51%);
+}
+.light-gray{
+  color:  hsl(212, 23%, 69%);
+}
+.bold-text{
+    font-weight: bold;
+}
+.author{
+    width: 80%;
+}
+
+.filter-svg{
+    width: 50%;
+    height: 81%;
+    height: auto;
+    filter:brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(57deg) brightness(109%) contrast(113%);
+}
+.share{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+}
