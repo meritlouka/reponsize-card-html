@@ -37,7 +37,7 @@ html {
     font-weight: 500;
 }
 .img-cont{
-   flex-basis: 34%;   
+   flex-basis: 36%;   
 }
 .article-img{
     overflow: hidden;
@@ -46,18 +46,16 @@ html {
     width: 124%;
 }
 .footer{
-    justify-content: center;
-    align-items: center;
     display: flex; 
     flex-wrap: wrap;
 }
 
 .avatar{
+    align-self: start;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     margin-right: 10px;
-    margin-left: -10px;
     margin-top: 3px;
 }
 
@@ -76,30 +74,33 @@ html {
 .bold-text{
     font-weight: bold;
 }
-.author{
-    width: 76%;
-}
 
-.filter-svg{
+
+.share-svg{
     width: 50%;
     height: 50%;
-    filter:brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(57deg) brightness(109%) contrast(113%);
 }
+
+.hover-img{
+    filter:brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(57deg) brightness(109%) contrast(113%); 
+}
+.hover-img-cont{
+    background-color:hsl(217, 19%, 35%);
+}
+.not-hover-img-cont{
+    background-color:  hsl(210, 46%, 95%);
+}
+
 .share{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
     border-radius: 50%;
     width: 20px;
     height: 20px;
+    align-self: flex-end;
 }
-.test{
-    top: 50%;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%);
-}
+
 .main {
     height: 100%;
     width: 100%;
@@ -111,8 +112,92 @@ html {
     vertical-align: middle;
 }
 p{
-    font-size: 10px;
+    font-size: 11px;
 }
 h2{
-    font-size: 15px;
+    font-size: 16px;
 }
+  .margin-r{
+      width: 7%;
+      margin-right: 2px;
+  }
+  .content{
+      display: inherit;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+  } 
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    } 
+
+  .share-cont{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+  }
+  .text-sh{
+   color: white;
+  }
+
+  @media only screen and (min-width: 800px) {
+    
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        width: 145px;
+        background-color:hsl(214, 17%, 51%);
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        margin-top: -17px;
+        z-index: 1;
+    }
+    
+
+ 
+    /* Tooltip container */
+    .tooltip {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .share-hover{
+        width: 100%;
+        height: 45px;
+        border-radius: 0;
+        background-color: hsl(217, 19%, 35%);
+        padding: 0;
+    }  
+    html {
+        height: 100%;  
+        background-color: white;
+    }
+    .img-cont {
+        height: 40%;
+    }
+    .article-img{
+       width: 100%;
+       border-radius: 5% 5% 0 0;
+    }
+    .article{
+        border-radius: 0 0 5% 5%;  
+    }
+    .content{
+        display: block;
+        width: 50%;
+    }
+    .tooltip:hover .author{
+        display: none;
+    }
+    .tooltip:hover  .author-img{
+        display: none;
+    }
+  }
