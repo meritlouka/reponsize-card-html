@@ -19,7 +19,6 @@ html {
     justify-content: center;
     display: flex; 
     flex-wrap: wrap;
-    width: 640px;
     margin: auto;
 }
 .article{
@@ -145,7 +144,9 @@ h2{
   }
 
   @media only screen and (min-width: 800px) {
-    
+    .container{
+        width: 640px;
+    }
     /* Tooltip text */
     .tooltip .tooltiptext {
         width: 145px;
